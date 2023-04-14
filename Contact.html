@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamta K. Devnani About</title>
     <link rel="stylesheet" href="style.css" />
-    <script> src = "javascript.js" </script>
+
+    <script src="javascript.js"></script>
+
 </head>
 
 <body>
@@ -27,24 +29,21 @@
         <h3>Contact Form</h3>
 
         <div class="container">
-            <form  method = 'post' id = 'form'>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit" id ='submit'>
+            <form method='post' id='form'>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <br>
+                <br>
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." style="height:25px"
+                    style="width:75px">
+                <br>
+                <br>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:10
+                50px"></textarea>
+                <button type="submit" value="Submit" id='submit'>Submit</button>
             </form>
         </div>
 
@@ -52,16 +51,10 @@
     <footer>
         <p>Author: Mamta K. Devnani<br>
             <a href="mailto:mamtakdev@gmail.com">Email</a><br>
-            <a href="https://facebook.com">Visit Mamta On Facebook!</a>
+            <a href="https://facebook.com"><img class="fbimg" src="fb.jpg"></a>
         </p>
     </footer>
-
+    <script src="contact.js"></script>
 </body>
 
 </html>
-<!-- dynamic styling with hover effects
-A contact form with method these specific fields:
-name field
-email field
-message field
-submit button -->
